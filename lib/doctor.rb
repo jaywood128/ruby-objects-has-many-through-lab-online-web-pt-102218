@@ -25,7 +25,7 @@ def appointments
 end
 
 def patients
-  appointments.map {|appointment| appointment.patient == self}
+  appointments.collect {|appointment| appointment.patient == self}
 end
 
 end
