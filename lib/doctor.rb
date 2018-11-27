@@ -25,7 +25,7 @@ def appointments
 end
 
 def patients
-  appointments.select {|appointment| self.appointments}
+  appointments.select {|appointment| self.appointment}
 end
 
 end
