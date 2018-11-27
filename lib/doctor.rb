@@ -26,6 +26,5 @@ end
 
 def patients
   Appointment.all.select {|appointment| binding.pry}
-
 end
 end
