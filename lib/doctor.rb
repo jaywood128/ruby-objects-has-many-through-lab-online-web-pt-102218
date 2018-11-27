@@ -24,7 +24,8 @@ def appointments
   Appointment.all.select {|appointment| appointment.doctor == self }
 end
 
-  def patients
-  binding.pry
-  end
+def patients
+  Appointment.all.select {|appointment| appointment.patient == self}
+
+end
 end
